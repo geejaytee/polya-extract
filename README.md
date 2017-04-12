@@ -1,4 +1,4 @@
-# polya-scan
+# polya-extract
 
 Poly(A)-tail gel scanned data to tail distribution statistics
 
@@ -22,3 +22,8 @@ Algorithm is as follows:
 5. Output RData file with same stem filename as input XLS file
 
 These output files are used by the modelling and parameter fitting codes for obtaining parameters for the poly(A) model.
+
+A test file (test.xls) in the correct format is supplied for code test purposes.
+
+Notes:
+- code runs in base R, but uses gdata package to extract Excel data. gdata itself requires a working Perl installation. For Windows, Strawberry Perl works perfectly; for Unix/Linux versions there is a native Perl that should be found if installed correctly when gdata is added to R.
