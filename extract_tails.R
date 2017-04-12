@@ -102,8 +102,8 @@ for(i in input_files){
 	  xyfunction  <- smooth.spline(x=lanelengths,y=lanedata,all.knots=T) 
 	  mRNA$mRNA[,j-1] <- predict(xyfunction,1:600)$y
 	  
-#      windows()
-      x11()
+      windows()
+#      x11()
 	  
 	  plot(lanelengths,lanedata,type="p",col=2)
 	  lines(1:600,mRNA$mRNA[,j-1])
