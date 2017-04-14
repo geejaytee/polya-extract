@@ -10,14 +10,14 @@ Algorithm is as follows:
 
 1. Read whole XLS file containing all lanes 
 2. Then per lane:
-   i.   Extract non-empty rows of spreadsheet
-   ii.  Fit smoothing spline through intensity 
-   iii. Evaluate spline at lengths 1-600
+   - Extract non-empty rows of spreadsheet
+   - Fit smoothing spline through intensity 
+   - Evaluate spline at lengths 1-600
 3. Sort lanes in time order
 4. Build mRNA list variable with following components:
-   mRNA:       intensity data (intensities>0, otherwise NA)
-   times:      sorted times from spreadsheet 
-   time_mask:  list of flags per time 
+   - mRNA:       intensity data (intensities>0, otherwise NA)
+   - times:      sorted times from spreadsheet 
+   - time_mask:  list of flags per time 
  
 5. Output RData file with same stem filename as input XLS file
 
